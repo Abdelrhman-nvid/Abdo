@@ -1,0 +1,321 @@
+body{
+    background: radial-gradient( circle at top right, #1e1e2f, #0f0f1a, #000);
+    background-size: cover;
+    height: 100vh;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    margin:0;
+
+    color: #ffffff;
+
+    font-family: 'Poppins', sans-serif;
+
+}
+.container {
+    display:flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+    height: 100vh;
+    font-size: 25px;
+    
+}
+
+h1 {
+    font-size: 3,5rem;
+    color: #fff;
+    text-shadow: 0 0 10px rgba(255,255,255 ,0.2);
+    margin-top:0;
+
+}
+.head p{
+    color: #00d2ff;
+    font-size: 1.2rem;
+    letter-spacing: 2px;
+    margin-top: 0 ;
+}
+.navbar{
+    display: flex;
+    flex-direction: row;
+    gap:15px;
+    margin-top: 20px;
+}
+.navbar button{
+    background: rgba(0,210,255 ,0.1);
+    border: 2px solid rgba(0, 210, 255, 0.3);
+    color:#00d2ff;
+    padding:12px 25px;
+    border-radius:10px;
+    font-weight: bold;
+    text-decoration: none;
+    transition: 0.4s all ease;
+    backdrop-filter: blur(5px);
+    margin:10px;
+    display: inline-block;
+    box-shadow: 0px 1px 15px rgba(255,255,255 ,0.2);
+    font-size: 20px;
+}
+.navbar button:hover{
+    background: rgba(0,210,255 ,0.2);
+    border-color:#00d2ff;
+    box-shadow:0px 0px 13px rgba(0,210,255 ,0.6);
+    transform:translateY(-1px);
+    color:#fff;
+    text-shadow: 0 0 3px rgba(255,255,255 ,0.5)
+}
+.navbar button:active{
+    background: #00d2ff;
+    border-color:#ffffff;
+    box-shadow:1px 1px 15px rgba(0,210,255 ,1), 1px 1px 15px rgba(0,210,255 ,1);
+    transform:translateY(-1px);
+    color:#fff;
+    text-shadow: 0 0 3px rgba(255,255,255 ,0.5)
+}
+#connect-h1{
+    font-size: 3em;
+    text-shadow: 
+        0px 0px 5px rgb(146, 145, 145, 0.3),
+        0px 0px 7px rgb(146, 145, 145, 0.5),
+        0px 0px 9px rgb(146, 145, 145, 0.7);
+}
+
+/* حاوية الأزرار - لرصها تحت بعض */
+.social-buttons {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    gap: 15px; /* مسافة بين الأزرار */
+    max-width: 250px; /* عرض مناسب للأزرار */
+    margin: 20px auto; /* لتوسيط الأزرار في الصفحة */
+    justify-content: center;
+}
+
+/* التنسيق الأساسي لكل زر */
+.social-btn {
+    display: flex;
+    align-items: center;
+    gap: 12px;
+    padding: 16px 26.666666px;
+    background-color: transparent;
+    border: 2px solid rgba(0,210,255 ,0.2); /* حدود خضراء */
+    border-radius: 8px;
+    text-decoration: none;
+    color: #fff; /* لون النص أبيض */
+    text-shadow: 0px 0px 5px rgba(255,255,255 ,0.2);
+    font-family: Arial, sans-serif;
+    transition: all 0.3s ease;
+}
+
+
+/* تنسيق الـ SVG (الأيقونات) */
+.social-btn svg {
+    width: 26.66px;
+    height: 26.66px;
+    fill: rgba(0,210,255 ,0.2); /* لون الأيقونات أخضر */
+    transition: all 0.3s ease;
+
+}
+
+/* تأثير الـ Hover (عند الوقوف بالماوس) - الزرار كله يقلب أخضر */
+.social-btn:hover {
+    background-color: #00d2ff;
+    transform: translateY(-3px); /* حركة خفيفة للفوق */
+    box-shadow: 0 5px 15px #00d2ff; /* ظل أخضر */
+}
+
+/* عند الـ Hover - الأيقونة تلمع والنص يبقى واضح */
+.social-btn:hover svg {
+    fill: #fff; /* الأيقونة تقلب أبيض */
+}
+
+.social-btn:hover span {
+    color: #fff;
+}
+
+.languages-container {
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+    max-width: 300px;
+    margin: 20px auto;
+}
+.about-con{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    text-align: center;
+    padding:40px 20px;
+    color:#FFF
+}
+#about-h1{
+    text-shadow: 0 0 5px #2da158, 0 0 7px #1b9e4b;
+    letter-spacing: 2px;
+    margin-top: 50px;
+
+}
+#lang-h2{
+    margin-top: 30px;
+    margin-bottom:20px;
+    font-size: 1.5rem;
+    color:#25D366;
+    text-shadow: 
+        0 0 7px rgba(37, 211, 102, 0.3),  /* توهج قريب */
+        0 0 15px rgba(37, 211, 102, 0.2), /* توهج متوسط */
+        0 0 21px rgba(37, 211, 102, 0.1); /* توهج بعيد */
+}
+#about-p{color: #ffffff;
+    text-shadow: 
+        0 0 7px rgba(37, 211, 102, 0.7),  /* توهج قريب */
+        0 0 15px rgba(37, 211, 102, 0.5), /* توهج متوسط */
+        0 0 21px rgba(37, 211, 102, 0.3); /* توهج بعيد */
+    letter-spacing: 2px;
+    max-width:600px;
+    line-height:1.6;
+    font-size:1.1rem;
+    margin-bottom: 20px;
+    color:#e0e0e0;
+
+    font-family: 'Poppins', sans-serif; /* لو الخط محملش يستخدم أي خط sans-serif عادي */
+    font-weight: 400;       /* سمك الخط - 400 هو الأنسب للفقرات */
+    line-height: 1.6;       /* أهم سطر! بيسيب مساحة بين السطور عشان الكلام ميبقاش محشور */
+
+}
+
+#about-born {
+    font-family: 'Montserrat', sans-serif;
+    font-weight: 900;           /* عشان يخلي الحروف تقيلة وظاهرة */
+    letter-spacing: 3px;        /* وسع المسافات عشان الـ Shadow ميسيحش الكلام */
+    font-size: 1.2rem;
+    color: #ffffff;
+    text-shadow: 0 0 5px #0c8538; /* التوهج الأخضر بتاعك */
+
+}
+.lang-item {
+    
+    display: flex;
+    justify-content: space-between; /* يخلي اسم اللغة في ناحية والحالة في ناحية */
+    background: rgba(255, 255, 255, 0.05);
+    padding: 10px 15px;
+    border-radius: 5px;
+    border-left: 3px solid #25D366; /* حركة جمالية باللون الأخضر */
+}
+
+.status {
+    font-size: 0.8rem;
+    padding: 2px 8px;
+    border-radius: 4px;
+}
+
+.lang-name{
+    font-family:'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif !important;
+}
+.completed {
+    color: #25D366;
+    text-shadow: 0 0 5px rgba(1, 189, 70, 0.836);
+}
+
+.coming-soon {
+    color: #ffc107; /* لون أصفر للتنبيه */
+    text-shadow: 0 0 5px rgb(255, 192, .9);
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+@media (max-width: 768px) {
+    .social-buttons{
+        display: flex;
+        flex-direction: column;
+        gap : 10px;
+        width: 90%;
+        margin: 0 auto;
+    }
+    .social-btn{
+        width: 220px;
+    }
+        #connect-h1{
+        margin-bottom: 40px ;
+        text-shadow: 0px 0px 4px rgba(255,255,255 ,0.5) ;
+    }
+    
+}
+@media (max-width: 480px){
+    .social-buttons{
+        display: flex;
+        flex-direction: column;
+        gap : 10px;
+        width: 90%;
+        margin: 0 auto;
+
+    }
+
+    .container{
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        display: flex;
+        :h1{
+            font-size: 20px ;
+        }
+        :p{
+            font-size: 10px;
+        }
+    }
+    .navbar{
+        display: flex;
+        flex-direction: column;
+        gap: 10px;
+        width:90%;
+        margin:0 auto
+    }
+    .navbar button{
+        width: 220px;
+        padding: 12px 1px;
+        font-size: 14px;
+        text-align: center;
+    }
+    .social-buttons{
+        width: 85%;
+        margin: 20px auto;
+        padding: 12px 1px;
+        font-size: 14px;
+        text-align: center;
+}
+.social-btn{
+    padding: 10px 15px;
+    font-size: 0.9rem;
+    width:100%;
+}
+    .social-btn svg{
+        width: 20px;
+        height: 20px;
+    }
+
+}
