@@ -1,0 +1,129 @@
+body{
+    background: radial-gradient( circle at top right, #1e1e2f, #0f0f1a, #000);
+    background-size: cover;
+    height: 100vh;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    margin:0;
+
+    color: #ffffff;
+
+    font-family: 'Poppins', sans-serif;
+
+}
+#connect-h1{
+    font-size: 3em;
+    text-shadow: 
+        0px 0px 5px rgb(146, 145, 145, 0.3),
+        0px 0px 7px rgb(146, 145, 145, 0.5),
+        0px 0px 9px rgb(146, 145, 145, 0.7);
+}
+
+/* حاوية الأزرار - لرصها تحت بعض */
+.social-buttons {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    gap: 15px; /* مسافة بين الأزرار */
+    max-width: 250px; /* عرض مناسب للأزرار */
+    margin: 20px auto; /* لتوسيط الأزرار في الصفحة */
+    justify-content: center;
+}
+
+/* التنسيق الأساسي لكل زر */
+.social-btn {
+    display: flex;
+    align-items: center;
+    gap: 12px;
+    padding: 16px 26.666666px;
+    background-color: transparent;
+    border: 2px solid rgba(0,210,255 ,0.2); /* حدود خضراء */
+    border-radius: 8px;
+    text-decoration: none;
+    color: #fff; /* لون النص أبيض */
+    text-shadow: 0px 0px 5px rgba(255,255,255 ,0.2);
+    font-family: Arial, sans-serif;
+    transition: all 0.3s ease;
+}
+
+
+/* تنسيق الـ SVG (الأيقونات) */
+.social-btn svg {
+    width: 26.66px;
+    height: 26.66px;
+    fill: rgba(0,210,255 ,0.2); /* لون الأيقونات أخضر */
+    transition: all 0.3s ease;
+
+}
+
+/* تأثير الـ Hover (عند الوقوف بالماوس) - الزرار كله يقلب أخضر */
+.social-btn:hover {
+    background-color: #00d2ff;
+    transform: translateY(-3px); /* حركة خفيفة للفوق */
+    transform: scale(1.05);
+    box-shadow: 0 5px 15px #00d2ff; /* ظل أخضر */
+}
+
+/* عند الـ Hover - الأيقونة تلمع والنص يبقى واضح */
+.social-btn:hover svg {
+    fill: #fff; /* الأيقونة تقلب أبيض */
+}
+
+.social-btn:hover span {
+    color: #fff;
+}
+
+
+
+
+
+@media (max-width: 768px ){
+    .social-buttons{
+        display: flex;
+        flex-direction: column;
+        gap : 10px;
+        width: 90%;
+        margin: 0 auto;
+    }
+    .social-btn{
+        width: 220px;
+    }
+        #connect-h1{
+        margin-bottom: 40px ;
+        text-shadow: 0px 0px 4px rgba(255,255,255 ,0.5) ;
+
+        }
+}
+
+@media (max-width: 480px){
+    .social-buttons{
+        display: flex;
+        flex-direction: column;
+        gap : 10px;
+        width: 90%;
+        margin: 0 auto;
+
+    }
+    .social-buttons{
+        width: 85%;
+        margin: 20px auto;
+        padding: 12px 1px;
+        font-size: 14px;
+        text-align: center;
+    }
+    .social-btn{
+        padding: 10px 15px;
+        font-size: 0.9rem;
+        width:100%;
+    }
+        .social-btn svg{
+            width: 20px;
+            height: 20px;
+        }
+
+
+
+
+}

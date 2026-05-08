@@ -1,0 +1,164 @@
+body{
+    background: radial-gradient( circle at top right, #1e1e2f, #0f0f1a, #000);
+    background-size: cover;
+    height: 100vh;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    margin:0;
+
+    color: #ffffff;
+
+    font-family: 'Poppins', sans-serif;
+
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+.languages-container {
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+    max-width: 300px;
+    margin: 20px auto;
+}
+.about-con{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    text-align: center;
+    padding:40px 20px;
+    color:#FFF
+}
+#about-h1{
+    text-shadow: 0 0 5px #2da158, 0 0 7px #1b9e4b;
+    letter-spacing: 2px;
+    margin-top: 50px;
+
+}
+#lang-h2{
+    margin-top: 30px;
+    margin-bottom:20px;
+    font-size: 1.5rem;
+    color:#25D366;
+    text-shadow: 
+        0 0 7px rgba(37, 211, 102, 0.3),  /* توهج قريب */
+        0 0 15px rgba(37, 211, 102, 0.2), /* توهج متوسط */
+        0 0 21px rgba(37, 211, 102, 0.1); /* توهج بعيد */
+}
+#about-p{color: #ffffff;
+    text-shadow: 
+        0 0 7px rgba(37, 211, 102, 0.7),  /* توهج قريب */
+        0 0 15px rgba(37, 211, 102, 0.5), /* توهج متوسط */
+        0 0 21px rgba(37, 211, 102, 0.3); /* توهج بعيد */
+    letter-spacing: 2px;
+    max-width:600px;
+    line-height:1.6;
+    font-size:1.1rem;
+    margin-bottom: 20px;
+    color:#e0e0e0;
+
+    font-family: 'Poppins', sans-serif;
+    font-weight: 400;      
+    line-height: 1.6;       
+
+}
+
+#about-born {
+    font-family: 'Montserrat', sans-serif;
+    font-weight: 900;           /* عشان يخلي الحروف تقيلة وظاهرة */
+    letter-spacing: 3px;        /* وسع المسافات عشان الـ Shadow ميسيحش الكلام */
+    font-size: 1.2rem;
+    color: #ffffff;
+    text-shadow: 0 0 5px #0c8538; /* التوهج الأخضر بتاعك */
+
+}
+.lang-item {
+    
+    display: flex;
+    justify-content: space-between; /* يخلي اسم اللغة في ناحية والحالة في ناحية */
+    background: rgba(255, 255, 255, 0.05);
+    padding: 10px 15px;
+    border-radius: 5px;
+    border-left: 3px solid #25D366; /* حركة جمالية باللون الأخضر */
+}
+
+.status {
+    font-size: 0.8rem;
+    padding: 2px 8px;
+    border-radius: 4px;
+}
+
+.lang-name{
+    font-family:'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif !important;
+}
+.completed {
+    color: #25D366;
+    text-shadow: 0 0 5px rgba(1, 189, 70, 0.836);
+}
+
+.coming-soon {
+    color: #ffc107; /* لون أصفر للتنبيه */
+    text-shadow: 0 0 5px rgb(255, 192, .9);
+}
+
+
+
+@media (max-width: 480px){
+    .lang-item{
+        margin-left: 5px auto ;
+        margin-right: 5px auto ;
+        flex-direction:column;
+        display: flex;
+        padding: 5px 8px
+    }
+    .html, .css, .js{
+        flex-direction: column;
+        flex-wrap: wrap;
+    }
+    .lang{
+        flex-direction: column;
+    }
+    }
+@media (max-width: 768px){
+    .lang-item{
+        margin-left: 85% auto ;
+        margin-right: 85% auto ;
+        flex-direction:column;
+        display: flex;
+        gap : 10px;
+        width: 90%;
+        margin: 0 auto;
+
+    }
+    /*.html, .css, .js{
+        flex-direction: column;
+        flex-wrap: wrap;
+    }
+    .lang{
+        flex-direction: column;
+}*/
+    
+    .lang-{
+        flex-direction: row;
+        width: 220px;
+    }
+    #html, #css, #js{
+        flex-direction: column;
+        flex-wrap: wrap;
+    }
+    
+}
+
